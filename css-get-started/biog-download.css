@@ -1,0 +1,17 @@
+.hot-pink{
+    color: hotpink;
+    border-bottom: 10px dotted purple  ;
+}
+h2{
+    font-style: italic;
+}
+#eeeeee{
+    border: purple solid 5px ;
+    padding: 10px;
+}
+#eeeeee:hover{
+    border: red solid 5px ;
+}
+.web:hover{
+    color: green;
+}
