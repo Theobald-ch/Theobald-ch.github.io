@@ -1,0 +1,89 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+h1{
+    font-family: Serif;
+    font-size: 0.5rem;
+    text-align: center;
+}
+@font-face {
+   font-family: "myFont";
+    src:url("myFont.ttf")
+}
+h2{
+    font-family: "myFont";
+
+}
+html{
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+body{
+    line-height: 2;
+    text-indent:20px
+}
+a{
+    background-image:url("external-link-52.png") ;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 20px;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: purple;
+}
+a:focus{
+    color: black;
+}
+a:hover{
+    color: chartreuse;
+    text-decoration-line: none;
+}
+ol,ul{
+    list-style-type:lower-roman ;
+}
