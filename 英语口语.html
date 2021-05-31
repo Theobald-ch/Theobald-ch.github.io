@@ -1,0 +1,700 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>English-learning</title><title>English-learning</title>
+<link href='file://C://Users//Administrator//AppData//Roaming//Typora/themes/purple.css' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-fences-math .MathJax_SVG_Display, .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: visible; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-math .MathJax_SVG_Display { margin-top: 8px; cursor: default; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+
+
+:root {
+  --title-color: #8064a9;
+  --text-color: #444444;
+  --light-text-color: #666666;
+  --link-color: #2aa899;
+  --code-color: #745fb5;
+
+  --shadow-color: #eee;
+  --purple-light: rgba(116, 95, 181, 0.2);
+  --border: #e7e7e7;
+  --shadow: 3px 3px 10px var(--shadow-color);
+
+  --side-bar-bg-color: #fafafa;
+  --control-text-color: var(var(--light-text-color));
+  --active-file-text-color: var(--title-color);
+  --active-file-bg-color: var(--shadow-color);
+  --item-hover-bg-color: var(--shadow-color);
+  --active-file-border-color: var(var(--title-color));
+
+  --base-font: "Helvetica Neue", "Noto Sans", -apple-system, Ubuntu,
+    "Microsoft YaHei", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans",
+    "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", "Source Han Sans SC",
+    "Source Han Sans CN", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti",
+    SimHei, "WenQuanYi Zen Hei Sharp", "Source Sans Pro", sans-serif;
+  --title-font: "EB Garamond", Georgia, "Noto Serif", "Noto Serif CJK SC",
+    "Nimbus Roman No9 L", "Songti SC", "Source Han Serif SC",
+    "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun,
+    SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN",
+    "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU,
+    "Ubuntu", "Source Sans Pro", serif;
+  --monospace: "JetBrains Mono", "Fira Code", "Cascadia Code", "Sarasa Term SC",
+    Monaco, "Deja Vu Sans Mono", Consolas, "Lucida Console", "Andale Mono",
+    "Roboto Mono", Courier, Monospace !important;
+}
+
+/* 打印 */
+@media print {
+  html {
+    font-size: 0.9rem;
+  }
+
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+
+  pre {
+    word-wrap: break-word;
+  }
+  #write {
+    max-width: 100%;
+  }
+  @page {
+    size: A3; /* PDF output size */
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: initial;
+}
+
+body {
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6rem;
+  letter-spacing: 0;
+  overflow-x: hidden;
+}
+
+/* 页边距 和 页面大小 */
+#write {
+  font-family: var(--base-font);
+  /* max-width: 914px; */
+  margin: 0 auto;
+  padding: 1rem 4rem;
+  padding-bottom: 100px;
+}
+
+#write p {
+  line-height: 1.6rem;
+  word-spacing: 0.05rem;
+}
+
+body > *:first-child {
+  margin-top: 0 !important;
+}
+
+body > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+#write a {
+  border-bottom: none;
+}
+#write a:hover {
+  border-bottom: 1px solid var(--link-color);
+  color: var(--link-color);
+  text-decoration: none;
+}
+.md-content {
+  color: var(--light-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  line-height: 1.3;
+  cursor: text;
+  color: var(--title-color);
+  font-family: var(--title-font);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.25em;
+  margin-bottom: 2rem;
+}
+h1:after {
+  content: "";
+  display: block;
+  margin: 0.2em auto 0;
+  width: 6rem;
+  height: 2px;
+  border-bottom: 2px solid var(--title-color);
+}
+
+h2 {
+  padding-left: 0.4em;
+  font-size: 1.75em;
+  border-left: 0.4em solid var(--title-color);
+  border-bottom: 1px solid var(--title-color);
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.3em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1.1em;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
+  margin: 0.8em 0;
+}
+
+/* horizontal rule */
+hr {
+  margin: 1.5em auto;
+  border-top: 1px solid var(--border);
+}
+
+/* 列表 */
+li > ol,
+li > ul {
+  margin: 0 0;
+}
+
+li p.first {
+  display: inline-block;
+}
+
+ul,
+ol {
+  padding-left: 2rem;
+}
+
+ul:first-child,
+ol:first-child {
+  margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0;
+}
+
+#write ol li,
+ul li {
+  padding-left: 0.1rem;
+}
+
+/* 引用 */
+blockquote {
+  border-left: 0.2em solid var(--purple-light);
+  padding-left: 1em;
+  color: var(--light-text-color);
+  font-family: var(--base-font);
+}
+
+/* 表格 */
+table {
+  margin-bottom: 1.25rem;
+}
+table th,
+table td {
+  padding: 8px;
+  line-height: 1.25rem;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+table th {
+  font-weight: bold;
+}
+table thead th {
+  vertical-align: middle;
+}
+table tr:nth-child(2n),
+thead {
+  background-color: #fcfcfc;
+}
+
+/* 粗体 */
+#write strong {
+  padding: 0 2px;
+  font-weight: bold;
+}
+
+/* inline code */
+#write code,
+tt {
+  padding: 2px 4px;
+  border-radius: 0.3rem;
+  font-family: var(--monospace);
+  font-size: 0.9rem;
+  color: var(--code-color);
+  background-color: #f4f2f9;
+  margin: 0 2px;
+}
+
+#write .md-footnote {
+  color: var(--code-color);
+  background-color: #f4f2f9;
+}
+
+/* highlight. */
+#write mark {
+  background-color: #f9f2f4;
+  border-radius: 0.3rem;
+  padding: 2px 4px;
+  margin: 0 2px;
+  color: #c7254e;
+}
+
+#write del {
+  padding: 1px 2px;
+}
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+#write pre.md-meta-block {
+  padding: 1rem;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border: 0;
+  border-radius: 3px;
+  color: #777777;
+  margin-top: 0 !important;
+}
+
+.mathjax-block > .code-tooltip {
+  bottom: 0.375rem;
+}
+
+/* 图片 */
+.md-image > .md-meta {
+  border-radius: 3px;
+  font-family: var(--monospace);
+  padding: 2px 0 0 4px;
+  font-size: 0.9em;
+  color: inherit;
+}
+/* 图片靠左显示 */
+/* p .md-image:only-child {
+  width: auto;
+  text-align: left;
+  margin-left: 2rem;
+} */
+
+/* 写![shadow-...]() 显示图片阴影 */
+img[alt|="shadow"] {
+  box-shadow: var(--shadow);
+}
+
+#write a.md-toc-inner {
+  line-height: 1.6;
+  white-space: pre-line;
+  border-bottom: none;
+  font-size: 0.9rem;
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+  font-family: var(--base-font);
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+  visibility: visible;
+}
+
+.md-lang {
+  color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+  --item-hover-bg-color: #e6f0fe;
+}
+
+/* border and bg */
+.md-fences {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: #fdfdfd !important;
+}
+/* 代码框阴影 */
+#write pre.md-fences {
+  display: block;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: var(--shadow);
+}
+
+.cm-s-inner {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.cm-s-inner.CodeMirror,
+.cm-s-inner .CodeMirror-gutters {
+  color: #3a3432 !important;
+  border: none;
+}
+
+.cm-s-inner .CodeMirror-gutters {
+  color: #6d8a88;
+}
+
+.cm-s-inner .CodeMirror-linenumber {
+  padding: 0 0.1rem 0 0.3rem;
+  color: #b8b5b4;
+}
+
+.cm-s-inner .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: #a34e8f !important;
+}
+
+#fences-auto-suggest .active {
+  background: #ddd;
+}
+
+.cm-s-inner span.cm-comment {
+  color: #9daab6;
+}
+.cm-s-inner span.cm-builtin {
+  color: #0451a5;
+}
+
+/* language tip */
+#write .code-tooltip {
+  border: 1px solid var(--border);
+}
+
+.auto-suggest-container {
+  border-color: #b4b4b4;
+}
+
+.auto-suggest-container .autoComplt-hint.active {
+  background: #b4b4b4;
+  color: inherit;
+}
+
+/* task list */
+#write .md-task-list-item > input {
+  -webkit-appearance: initial;
+  display: block;
+  position: absolute;
+  border: 1px solid #b4b4b4;
+  border-radius: 0.2rem;
+  margin-top: 0.3rem;
+  height: 1rem;
+  width: 1rem;
+  transition: background 0.3s;
+}
+
+#write .md-task-list-item > input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#write .md-task-list-item > input:hover {
+  background: #ddd;
+}
+
+#write .md-task-list-item > input[checked]::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 60%;
+  width: 2px;
+  transform: rotate(40deg);
+  background: #333;
+}
+
+#write .md-task-list-item > input[checked]::after {
+  content: "";
+  position: absolute;
+  top: 46%;
+  left: 25%;
+  height: 30%;
+  width: 2px;
+  transform: rotate(-40deg);
+  background: #333;
+}
+
+#write .md-task-list-item > p {
+  transition: color 0.3s, opacity 0.3s;
+}
+
+#write .md-task-list-item.task-list-done > p {
+  color: #b4b4b4;
+  text-decoration: line-through;
+}
+
+#write .md-task-list-item.task-list-done > p > .md-emoji {
+  opacity: 0.5;
+}
+
+#write .md-task-list-item.task-list-done > p > .md-link > a {
+  opacity: 0.6;
+}
+
+/* sidebar */
+#typora-sidebar,
+.typora-node #typora-sidebar {
+  box-shadow: 3px 0px 10px var(--shadow-color);
+}
+.sidebar-content-content {
+  font-size: 0.9rem;
+}
+@import "";
+
+:root {
+  --link-color: #745fb5;
+  --code-color: #ec71b7;
+}
+
+
+
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n3"><a class="md-toc-inner" href="#你好吗">你好吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n38"><a class="md-toc-inner" href="#再见">再见</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n48"><a class="md-toc-inner" href="#早上好">早上好</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n53"><a class="md-toc-inner" href="#打扰一下">打扰一下</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n56"><a class="md-toc-inner" href="#谢谢">谢谢</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n63"><a class="md-toc-inner" href="#再说一遍">再说一遍</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n66"><a class="md-toc-inner" href="#很高兴认识你">很高兴认识你</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n71"><a class="md-toc-inner" href="#询问名字">询问名字</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n76"><a class="md-toc-inner" href="#你从哪里来">你从哪里来</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n84"><a class="md-toc-inner" href="#那你呢">那你呢</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n88"><a class="md-toc-inner" href="#询问年龄日常交流询问年龄不礼貌">询问年龄（日常交流询问年龄不礼貌)</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n93"><a class="md-toc-inner" href="#疑问词">疑问词</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n101"><a class="md-toc-inner" href="#介绍人给其他人">介绍人给其他人</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n105"><a class="md-toc-inner" href="#指定代词">指定代词 </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n111"><a class="md-toc-inner" href="#称呼">称呼</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n123"><a class="md-toc-inner" href="#多巧啊">多巧啊</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n126"><a class="md-toc-inner" href="#想要">想要 </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n129"><a class="md-toc-inner" href="#你是干什么的">你是干什么的</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n136"><a class="md-toc-inner" href="#我也一样">我也一样</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n139"><a class="md-toc-inner" href="#感叹">感叹</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n146"><a class="md-toc-inner" href="#做事">做事</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n150"><a class="md-toc-inner" href="#现在几点了">现在几点了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n167"><a class="md-toc-inner" href="#下一班火车几点开">下一班火车几点开</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n171"><a class="md-toc-inner" href="#准时">准时</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n174"><a class="md-toc-inner" href="#你这话什么意思">你这话什么意思</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n177"><a class="md-toc-inner" href="#我迟到了">我迟到了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n180"><a class="md-toc-inner" href="#数字">数字</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n187"><a class="md-toc-inner" href="#我明白了">我明白了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n193"><a class="md-toc-inner" href="#我的表快了">我的表快了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n198"><a class="md-toc-inner" href="#今天星期几">今天星期几</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n205"><a class="md-toc-inner" href="#今天几月几号">今天几月几号？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n211"><a class="md-toc-inner" href="#今天是情人节">今天是情人节</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n216"><a class="md-toc-inner" href="#月份">月份</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n234"><a class="md-toc-inner" href="#日期">日期</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n244"><a class="md-toc-inner" href="#序数词">序数词</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n275"><a class="md-toc-inner" href="#数字训练">数字训练</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n278"><a class="md-toc-inner" href="#日期训练">日期训练</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n280"><a class="md-toc-inner" href="#所有格">所有格</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n323"><a class="md-toc-inner" href="#天气怎么样">天气怎么样</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n331"><a class="md-toc-inner" href="#你在哪里干什么">你在哪里干什么</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n333"><a class="md-toc-inner" href="#我在这儿出差">我在这儿出差</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n336"><a class="md-toc-inner" href="#真可惜">真可惜</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n341"><a class="md-toc-inner" href="#有-1">有</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n350"><a class="md-toc-inner" href="#春夏秋冬">春夏秋冬</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n356"><a class="md-toc-inner" href="#修饰天气">修饰天气</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n375"><a class="md-toc-inner" href="#现在进行时">现在进行时</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n382"><a class="md-toc-inner" href="#现在">现在</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n390"><a class="md-toc-inner" href="#吃晚餐">吃晚餐</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n394"><a class="md-toc-inner" href="#我可以吗">我可以吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n398"><a class="md-toc-inner" href="#当然请便">当然，请便</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n402"><a class="md-toc-inner" href="#尽可能">尽可能</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n406"><a class="md-toc-inner" href="#请问是谁在打电话啊">请问是谁在打电话啊</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n411"><a class="md-toc-inner" href="#我是汤姆">我是汤姆</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n417"><a class="md-toc-inner" href="#打电话问对方是谁吗">打电话，问对方是谁吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n421"><a class="md-toc-inner" href="#稍等一下">稍等一下</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n430"><a class="md-toc-inner" href="#他什么时候回来">他什么时候回来</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n435"><a class="md-toc-inner" href="#他不在">他不在</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n438"><a class="md-toc-inner" href="#稍后打来">稍后打来</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n441"><a class="md-toc-inner" href="#一些">一些</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n445"><a class="md-toc-inner" href="#组动词">组动词</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n458"><a class="md-toc-inner" href="#诊所">诊所</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n462"><a class="md-toc-inner" href="#预约-1">预约</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n467"><a class="md-toc-inner" href="#下午4点可以吗">下午4点可以吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n470"><a class="md-toc-inner" href="#长途电话">长途电话</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n473"><a class="md-toc-inner" href="#我能提供什么吗-礼貌用句">我能提供什么吗 礼貌用句</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n478"><a class="md-toc-inner" href="#请跟我来">请跟我来</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n482"><a class="md-toc-inner" href="#明天可以吗">明天可以吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n487"><a class="md-toc-inner" href="#打电话">打电话</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n492"><a class="md-toc-inner" href="#区号">区号</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n495"><a class="md-toc-inner" href="#客房服务中心">客房服务中心</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n499"><a class="md-toc-inner" href="#前台">前台</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n502"><a class="md-toc-inner" href="#打电话叫起床">打电话叫起床</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n506"><a class="md-toc-inner" href="#打电话给我">打电话给我</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n512"><a class="md-toc-inner" href="#订一些菜">订一些菜</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n515"><a class="md-toc-inner" href="#我饿坏了">我饿坏了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n520"><a class="md-toc-inner" href="#先生你是不是准备好点菜呢">先生，你是不是准备好点菜呢？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n528"><a class="md-toc-inner" href="#你想要点些什么">你想要点些什么</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n531"><a class="md-toc-inner" href="#关闭停止营业打烊了">关闭，停止营业，打烊了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n536"><a class="md-toc-inner" href="#在什么前面-in-front-of">在什么前面 in front of </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n539"><a class="md-toc-inner" href="#借钱">借钱</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n546"><a class="md-toc-inner" href="#那支笔多少钱-商店里可以问但是不要私人问你的包多少钱啊外国人不喜欢额">那支笔多少钱 (商店里可以问,但是不要私人问你的包多少钱啊,外国人不喜欢额)</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n553"><a class="md-toc-inner" href="#你有更便宜的吗">你有更便宜的吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n559"><a class="md-toc-inner" href="#我要买它">我要买它</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n564"><a class="md-toc-inner" href="#你能找开100元吗">你能找开100元吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n580"><a class="md-toc-inner" href="#钱给你">钱给你</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n586"><a class="md-toc-inner" href="#有-2">有</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n593"><a class="md-toc-inner" href="#价格昂贵">价格昂贵</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n598"><a class="md-toc-inner" href="#某事某物">某事，某物</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n606"><a class="md-toc-inner" href="#比较级">比较级</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n620"><a class="md-toc-inner" href="#我可以看一下那件衬衫吗">我可以看一下那件衬衫吗？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n625"><a class="md-toc-inner" href="#你又来这一套了">你又来这一套了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n628"><a class="md-toc-inner" href="#我们到了">我们到了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n630"><a class="md-toc-inner" href="#在餐厅">在餐厅</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n634"><a class="md-toc-inner" href="#有双人桌吃饭吗">有双人桌吃饭吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n637"><a class="md-toc-inner" href="#预约-2">预约</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n640"><a class="md-toc-inner" href="#抽烟区还是非抽烟区">抽烟区还是非抽烟区？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n643"><a class="md-toc-inner" href="#麻烦可以给我靠窗的座位吗">麻烦可以给我靠窗的座位吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n645"><a class="md-toc-inner" href="#二手烟">二手烟</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n647"><a class="md-toc-inner" href="#请给我一个菜单">请给我一个菜单</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n650"><a class="md-toc-inner" href="#请给我账单">请给我账单？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n653"><a class="md-toc-inner" href="#你的牛排要几份熟">你的牛排要几份熟？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n663"><a class="md-toc-inner" href="#你的咖啡要怎么泡">你的咖啡要怎么泡?</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n670"><a class="md-toc-inner" href="#你想要一些甜点吗">你想要一些甜点吗？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n674"><a class="md-toc-inner" href="#你想要什么喝的吗">你想要什么喝的吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n679"><a class="md-toc-inner" href="#要我帮你拿袋子吗">要我帮你拿袋子吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n683"><a class="md-toc-inner" href="#请给我来份鸡肉饭">请给我来份鸡肉饭</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n687"><a class="md-toc-inner" href="#服务生">服务生</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n691"><a class="md-toc-inner" href="#明天去野餐怎么样">明天去野餐怎么样？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n696"><a class="md-toc-inner" href="#在服装店">在服装店</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n699"><a class="md-toc-inner" href="#你穿几号的">你穿几号的?</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n708"><a class="md-toc-inner" href="#我可以试穿吗">我可以试穿吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n715"><a class="md-toc-inner" href="#我正在寻找一条领带">我正在寻找一条领带</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n718"><a class="md-toc-inner" href="#任何特殊的品牌吗">任何特殊的品牌吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n732"><a class="md-toc-inner" href="#这一条如何">这一条如何?</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n737"><a class="md-toc-inner" href="#正在特价">正在特价</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n745"><a class="md-toc-inner" href="#外套">外套</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n768"><a class="md-toc-inner" href="#大小">大小</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n773"><a class="md-toc-inner" href="#你能帮我一下吗">你能帮我一下吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n783"><a class="md-toc-inner" href="#你能用礼品纸包装起来吗">你能用礼品纸包装起来吗？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n788"><a class="md-toc-inner" href="#你这儿有合乎我尺寸的蓝色洋装吗">你这儿有合乎我尺寸的蓝色洋装吗？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n801"><a class="md-toc-inner" href="#你们有试衣间吗">你们有试衣间吗?</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n806"><a class="md-toc-inner" href="#散个步">散个步</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n809"><a class="md-toc-inner" href="#角落">角落</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n818"><a class="md-toc-inner" href="#这一双刚好">这一双刚好</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n820"><a class="md-toc-inner" href="#那是个好主意">那是个好主意</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n825"><a class="md-toc-inner" href="#高跟鞋">高跟鞋</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n828"><a class="md-toc-inner" href="#双城记">双城记</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n831"><a class="md-toc-inner" href="#谁是作者">谁是作者</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n834"><a class="md-toc-inner" href="#查尔斯">查尔斯</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n837"><a class="md-toc-inner" href="#卖完了">卖完了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n842"><a class="md-toc-inner" href="#请下星期再来">请下星期再来</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n845"><a class="md-toc-inner" href="#英汉词典">英汉词典</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n848"><a class="md-toc-inner" href="#这是最新版本吗">这是最新版本吗?</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n851"><a class="md-toc-inner" href="#我们有平装本和精装本">我们有平装本和精装本</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n854"><a class="md-toc-inner" href="#查字典">查字典</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n863"><a class="md-toc-inner" href="#搭出租车">搭出租车</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n870"><a class="md-toc-inner" href="#步行">步行</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n873"><a class="md-toc-inner" href="#你要到哪儿去">你要到哪儿去</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n877"><a class="md-toc-inner" href="#要给你多少钱">要给你多少钱</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n884"><a class="md-toc-inner" href="#零钱不用找了">零钱不用找了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n887"><a class="md-toc-inner" href="#国际机场还是国内机场">国际机场还是国内机场？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n890"><a class="md-toc-inner" href="#你能快点吗">你能快点吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n896"><a class="md-toc-inner" href="#我会及时送你到那儿">我会及时送你到那儿</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n902"><a class="md-toc-inner" href="#我不想误了我的航班">我不想误了我的航班</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n906"><a class="md-toc-inner" href="#订房间">订房间</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n916"><a class="md-toc-inner" href="#你有单人间吗">你有单人间吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n935"><a class="md-toc-inner" href="#订满了">订满了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n937"><a class="md-toc-inner" href="#你要住几天呢">你要住几天呢？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n944"><a class="md-toc-inner" href="#房间价格多少呢">房间价格多少呢</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n955"><a class="md-toc-inner" href="#大厅">大厅</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n958"><a class="md-toc-inner" href="#到时候见">到时候见</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n963"><a class="md-toc-inner" href="#公寓">公寓</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n969"><a class="md-toc-inner" href="#办理住宿手续">办理住宿手续</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n975"><a class="md-toc-inner" href="#预定号码房间">预定...号码房间</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n981"><a class="md-toc-inner" href="#请填一下这个表格">请填一下这个表格</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n987"><a class="md-toc-inner" href="#你要付现金还是刷卡">你要付现金还是刷卡</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n993"><a class="md-toc-inner" href="#你接受现金吗">你接受现金吗？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n999"><a class="md-toc-inner" href="#行李员">行李员</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1003"><a class="md-toc-inner" href="#行李">行李</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1019"><a class="md-toc-inner" href="#对吗好不好">对吗，好不好</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1028"><a class="md-toc-inner" href="#我想把这些旅行支票换成现金">我想把这些旅行支票换成现金</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1031"><a class="md-toc-inner" href="#身份证明文件">身份证明文件</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1039"><a class="md-toc-inner" href="#我的护照可以吗">我的护照可以吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1042"><a class="md-toc-inner" href="#请问美元对人民币的汇率是多少">请问美元对人民币的汇率是多少</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1047"><a class="md-toc-inner" href="#交换">交换</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1051"><a class="md-toc-inner" href="#换钱">换钱</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1054"><a class="md-toc-inner" href="#剩余">剩余</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1058"><a class="md-toc-inner" href="#订机票">订机票</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1062"><a class="md-toc-inner" href="#我想订一张机票从上海到北京">我想订一张机票从上海到北京</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1065"><a class="md-toc-inner" href="#你想要什么舱位">你想要什么舱位？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1072"><a class="md-toc-inner" href="#出发日期">出发日期</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1076"><a class="md-toc-inner" href="#你预定的是cx167航班-起飞时间是7月4号11点15分">你预定的是CX167航班 ，起飞时间是7月4号11点15分</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1079"><a class="md-toc-inner" href="#日本航空">日本航空</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1082"><a class="md-toc-inner" href="#来回票">来回票</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1088"><a class="md-toc-inner" href="#什么时候">什么时候</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1093"><a class="md-toc-inner" href="#请在星期五打电话回来确认">请在星期五打电话回来确认</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1097"><a class="md-toc-inner" href="#我想要出国念书">我想要出国念书</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1102"><a class="md-toc-inner" href="#按时">按时</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1106"><a class="md-toc-inner" href="#明天我将出发去北京">明天我将出发去北京</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1110"><a class="md-toc-inner" href="#出生日期">出生日期</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1113"><a class="md-toc-inner" href="#入境出境大厅">入境出境大厅</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1117"><a class="md-toc-inner" href="#登记手续柜台">登记手续柜台</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1120"><a class="md-toc-inner" href="#我们不用先去付机场税吗">我们不用先去付机场税吗？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1125"><a class="md-toc-inner" href="#靠窗还是过道">靠窗还是过道</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1129"><a class="md-toc-inner" href="#行李托运">行李托运</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1132"><a class="md-toc-inner" href="#到达">到达</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1139"><a class="md-toc-inner" href="#喷泉">喷泉</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1143"><a class="md-toc-inner" href="#请注意">请注意</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1147"><a class="md-toc-inner" href="#谢谢你们的合作">谢谢你们的合作</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1150"><a class="md-toc-inner" href="#垃圾">垃圾</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1155"><a class="md-toc-inner" href="#请填好这些标签然后把他们系在你的行李箱上">请填好这些标签然后把他们系在你的行李箱上</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1158"><a class="md-toc-inner" href="#把它们放在称上">把它们放在称上</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1161"><a class="md-toc-inner" href="#我恐怕你的行李超重了">我恐怕你的行李超重了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1164"><a class="md-toc-inner" href="#你必须额外付行李超重费">你必须额外付行李超重费</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1167"><a class="md-toc-inner" href="#领取行李的存根">领取行李的存根</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1171"><a class="md-toc-inner" href="#提取行李处">提取行李处</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1175"><a class="md-toc-inner" href="#登机牌">登机牌</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1178"><a class="md-toc-inner" href="#12号门登机">12号门登机</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1181"><a class="md-toc-inner" href="#就这样了吗">就这样了吗</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1184"><a class="md-toc-inner" href="#请在这里等待">请在这里等待</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1187"><a class="md-toc-inner" href="#你的行李必须通过机器扫描">你的行李必须通过机器扫描</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1190"><a class="md-toc-inner" href="#祝你搭机愉快">祝你搭机愉快</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1194"><a class="md-toc-inner" href="#他把绳子系在风筝上">他把绳子系在风筝上</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1197"><a class="md-toc-inner" href="#你需要节食了">你需要节食了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1200"><a class="md-toc-inner" href="#让我想想-让我看看">让我想想 ，让我看看</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1203"><a class="md-toc-inner" href="#一包香烟">一包香烟</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1206"><a class="md-toc-inner" href="#一瓶啤酒">一瓶啤酒</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1213"><a class="md-toc-inner" href="#我想邮寄这封信">我想邮寄这封信</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1225"><a class="md-toc-inner" href="#让我称一下重量">让我称一下重量</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1233"><a class="md-toc-inner" href="#我想要用航空邮寄这个麻烦你">我想要用航空邮寄这个，麻烦你</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1243"><a class="md-toc-inner" href="#你不能把这信封封起来">你不能把这信封封起来</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1241"><a class="md-toc-inner" href="#邮票多少钱">邮票多少钱</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1255"><a class="md-toc-inner" href="#在邮局">在邮局</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1261"><a class="md-toc-inner" href="#让他自己一个人做">让他自己一个人做</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1267"><a class="md-toc-inner" href="#请详细填写这份表格">请详细填写这份表格</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1274"><a class="md-toc-inner" href="#用海运寄包裹比寄空运便宜">用海运寄包裹比寄空运便宜</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1281"><a class="md-toc-inner" href="#很多邮件">很多邮件</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1291"><a class="md-toc-inner" href="#帅的">帅的</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1297"><a class="md-toc-inner" href="#在医生诊疗室">在医生诊疗室</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1303"><a class="md-toc-inner" href="#我认为我感冒了">我认为我感冒了</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1311"><a class="md-toc-inner" href="#我有一点发烧">我有一点发烧</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1328"><a class="md-toc-inner" href="#情况相当严重">情况相当严重</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1334"><a class="md-toc-inner" href="#我认为你需要打一针">我认为你需要打一针</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1338"><a class="md-toc-inner" href="#会不会痛呢">会不会痛呢？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1344"><a class="md-toc-inner" href="#很快就会结束">很快就会结束</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1350"><a class="md-toc-inner" href="#饭后服用这些药丸一天三次">饭后服用这些药丸，一天三次</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1386"><a class="md-toc-inner" href="#我下周会去旅行">我下周会去旅行</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1392"><a class="md-toc-inner" href="#喝汤时不要发生声音">喝汤时不要发生声音</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1396"><a class="md-toc-inner" href="#一顿饭-meal">一顿饭 meal </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1406"><a class="md-toc-inner" href="#他没有上班">他没有上班</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1411"><a class="md-toc-inner" href="#我担心父母的健康">我担心父母的健康</a></span></p></div><p>&nbsp;</p><h2 id='你好吗'><span>你好吗</span></h2><ul><li><span>How are you ?   --你好吗</span></li><li><span>How&#39;s it going.   --最近过的怎样？</span></li><li><span>how are you doing ?  你好吗</span></li><li><span>how are you getting along   最近过的怎样？</span></li><li><span>what&#39;s up  最近过的怎样？</span></li><li><span>how have you been 最近过的怎样？</span></li><li><span>what&#39;s happening 最近过的怎样？</span></li><li><span>How do you do . 您好</span></li></ul><p>&nbsp;</p><p>&nbsp;</p><ul><li><span>I&#39;m fine.  --我很好</span></li><li><span>Great    --很好</span></li><li><span>Not bad  --还不错</span></li><li><span>so so ,thank you  一般般</span></li><li><span>same as usual  老样子</span></li><li><span>How do you do . 您好</span></li><li><span>And you ? 那你呢</span></li></ul><h2 id='再见'><span>再见</span></h2><ul><li><span>See you later. 再见</span></li><li><span>Take care .保重</span></li></ul><p>&nbsp;</p><ul><li><span>You too .你也一样。</span></li></ul><h2 id='早上好'><span>早上好</span></h2><p><span>Good morning  早上好</span></p><p><span>Good afternoon  中文好</span></p><p><span>Good evening   晚上好</span></p><p><span>Good night 晚安</span></p><h2 id='打扰一下'><span>打扰一下</span></h2><p><span>excuse me? 对不起(一般用于打扰一下)</span></p><p><span>I&#39;m sorry. 对不起（做错事后)</span></p><h2 id='谢谢'><span>谢谢</span></h2><p><span>Thank you 谢谢</span></p><p>&nbsp;</p><p><span>You are welcome. 不客气</span></p><p><span>Don&#39;t mention it. </span></p><p><span>Not at all</span></p><p><span>No problem</span></p><h2 id='再说一遍'><span>再说一遍</span></h2><p><span>I beg your pardon? 请再说一遍。</span></p><p>&nbsp;</p><h2 id='很高兴认识你'><span>很高兴认识你</span></h2><p><span>Nice to meet you </span></p><p><span>Pleased to meet you </span></p><p><span>Glad to meet you.</span></p><p>&nbsp;</p><h2 id='询问名字'><span>询问名字</span></h2><p><span>What&#39;s your name ?</span></p><p><span>May I have your name,please ?客气用法</span></p><p>&nbsp;</p><p><span>My name is May.</span></p><h2 id='你从哪里来'><span>你从哪里来</span></h2><p><span>Where are you from  </span></p><p><span>Where do you come from</span></p><p><span>What&#39;s your nationality? </span></p><p>&nbsp;</p><p><span>I&#39;m from Hong Kong  我来自香港</span></p><p><span>I&#39;m from Japan. 我来自日本</span></p><p><span>I come from Amercia. 我来自美国</span></p><h2 id='那你呢'><span>那你呢</span></h2><p><span>What about you?  </span></p><p><span>How about you?</span></p><p>&nbsp;</p><h2 id='询问年龄日常交流询问年龄不礼貌'><span>询问年龄（日常交流询问年龄不礼貌)</span></h2><p><span>How old are you?</span></p><p>&nbsp;</p><p><span>I&#39;m twenty-five  我25岁</span></p><p><span>I&#39;m twenty-five years old.</span></p><h2 id='疑问词'><span>疑问词</span></h2><p><span>What 什么</span></p><p><span>Which 哪一个</span></p><p><span>Who  谁</span></p><p><span>Where  何地</span></p><p><span>When  何时</span></p><p><span>How  如何</span></p><p>&nbsp;</p><h2 id='介绍人给其他人'><span>介绍人给其他人</span></h2><p><span>Please meet my friend Jack, Bob.</span></p><p><span>Bob,This is my friend  Jack.</span></p><p>&nbsp;</p><h2 id='指定代词'><span>指定代词 </span></h2><p><span>this 这个 (很近的东西)</span></p><p><span>that 那个（较远的东西)</span></p><p><span>these 这些  (很近的东西)</span></p><p><span>those 那些 （较远的东西)</span></p><p>&nbsp;</p><h2 id='称呼'><span>称呼</span></h2><p><span>Mr.Wang  王先生</span></p><p><span>Sir 先生</span></p><p><span>Mrs Wang 已婚女士 【`misiz】王太太</span></p><p><span>Miss Wang 未婚女士 【mis】 王小姐 </span></p><p><span>Ms Wang  已婚或者未婚【miz】王女士 (好像真的没人用这个词。)</span></p><p><span>ma,am  女士</span></p><p>&nbsp;</p><p><span>不认识</span></p><p><span>可以18岁以上喊ma&#39;am,小女孩喊hello好了。</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='多巧啊'><span>多巧啊</span></h2><p><span>What a coincidence!</span></p><p>&nbsp;</p><h2 id='想要'><span>想要 </span></h2><p><span>I&#39;d like you to meet my friend, Sal.</span></p><p>&nbsp;</p><h2 id='你是干什么的'><span>你是干什么的</span></h2><p><span>What do you do, Sal</span></p><p><span>What&#39;s your occupation?</span></p><p><span>What&#39;s your job?</span></p><p>&nbsp;</p><p><span>I&#39;m a secretary.</span></p><p>&nbsp;</p><h2 id='我也一样'><span>我也一样</span></h2><p><span>Same here.</span></p><p>&nbsp;</p><h2 id='感叹'><span>感叹</span></h2><p><span>What a good movie this is.</span></p><p><span>what a good movie</span></p><p>&nbsp;</p><p><span>How nice John is .</span></p><p><span>How nice.</span></p><p>&nbsp;</p><h2 id='做事'><span>做事</span></h2><p><span>John  works in a trading company.</span></p><p><span>John works for a trading company.</span></p><p>&nbsp;</p><h2 id='现在几点了'><span>现在几点了</span></h2><p><span>What time is it, please  ?</span></p><p><span>What time is it by your watch ,please ? 请问你的表现在几点了?</span></p><p><span>Do you have the time ?现在几点钟(重点是有the)</span></p><p><span>Do you have time?  你有空吗?（没有the) I&#39;m running out of time . 我没空。(不要用I have no time.这表示时日无多了)</span></p><p>&nbsp;</p><p><span>It&#39;s two thirty-two p.m. 下午2点32 </span></p><p><span>It&#39;s a quarter to seven.  6点45    </span></p><p><span>It&#39;s noon /It&#39;s twelve noon. 中午12点</span></p><p><span>It&#39;s midnight / it&#39;s twelve midnight 现在是午夜12点。</span></p><p><span>It&#39;s five past three. 现在是3点5分。</span></p><p><span>It&#39;s three o five   3点零5分（o是0 zero的意思)</span></p><p><span>It&#39;s five past three . 3点零5分</span></p><p><span>It&#39;s half past two (2点半)  不可以说It&#39;s two half.</span></p><p><span>It&#39;s twenty to five  4点40分</span></p><p><span>It&#39;s seven 7点</span></p><p><span>It&#39;s five  twenty and eighteen seconds. 5点20分18秒</span></p><h2 id='下一班火车几点开'><span>下一班火车几点开</span></h2><p><span>What time is the next train?</span></p><p>&nbsp;</p><p><span>It&#39;s two forty-five.</span></p><h2 id='准时'><span>准时</span></h2><p><span>on time </span></p><p>&nbsp;</p><h2 id='你这话什么意思'><span>你这话什么意思</span></h2><p><span>What  do you mean?</span></p><p>&nbsp;</p><h2 id='我迟到了'><span>我迟到了</span></h2><p><span>I&#39;m late </span></p><p>&nbsp;</p><h2 id='数字'><span>数字</span></h2><p><span>one hundred  100 1百</span></p><p><span>one thousand  1000 1千</span></p><p><span>ten  thousand  10000 1万</span></p><p><span>one hundred thousand  100000 10万</span></p><p><span>one million   1000000 一百万</span></p><p>&nbsp;</p><h2 id='我明白了'><span>我明白了</span></h2><p><span>I see.</span></p><p><span>I understand.</span></p><p><span>Got it.</span></p><p><span>I&#39;ve got it.</span></p><p>&nbsp;</p><h2 id='我的表快了'><span>我的表快了</span></h2><p><span>My watch is slow </span></p><p><span>My watch is one hour fast.</span></p><p><span>My watch is ten minutes slow.</span></p><p>&nbsp;</p><h2 id='今天星期几'><span>今天星期几</span></h2><p><span>What day is it today? /What day is today?</span></p><p><span>What day is it tomorrow ?明天星期几</span></p><p><span>What day is it the day after tomorrow? 后台星期几</span></p><p>&nbsp;</p><p><span>It&#39;s Sunday.</span></p><p><span>Today is Sunday.</span></p><h2 id='今天几月几号'><span>今天几月几号？</span></h2><p><span>What&#39;s today&#39;s date?</span></p><p><span>What&#39;s the date today?</span></p><p>&nbsp;</p><p><span>It&#39;s February 14. （是念成fourteenth)</span></p><p>&nbsp;</p><h2 id='今天是情人节'><span>今天是情人节</span></h2><p><span>It&#39;s Valentine&#39;s Day.</span></p><p>&nbsp;</p><p><span>Happy Valentine&#39;s Day.</span></p><p>&nbsp;</p><h2 id='月份'><span>月份</span></h2><p><span>January  1月</span></p><p><span>February 2月</span></p><p><span>March  3月</span></p><p><span>April  4月</span></p><p><span>May  5月</span></p><p><span>June  6月</span></p><p><span>July  7月</span></p><p><span>August  8月</span></p><p><span>September 9月</span></p><p><span>October 10月</span></p><p><span>November 11月</span></p><p><span>December 12月</span></p><p>&nbsp;</p><p>&nbsp;</p><p><span>June 6,1998   1998年6月6日 </span></p><p><span>March 2，1999  (念成second)</span></p><p>&nbsp;</p><h2 id='日期'><span>日期</span></h2><p><span>Monday  星期一</span></p><p><span>Tuesday 星期二</span></p><p><span>Wednesday 星期三</span></p><p><span>Thursday 星期四</span></p><p><span>Friday  星期五</span></p><p><span>Saturday 星期六</span></p><p><span>Sunday 星期日</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='序数词'><span>序数词</span></h2><p><span>first 第一</span></p><p><span>second 第二</span></p><p><span>third 第三</span></p><p><span>fourth 第四</span></p><p><span>fifth  第五</span></p><p><span>sixth 第六</span></p><p><span>seventh 第七</span></p><p><span>eighth  第八</span></p><p><span>ninth 第九</span></p><p><span>tenth 第十</span></p><p><span>eleventh 第十一</span></p><p><span>twelfth 第十二</span></p><p><span>thirteenth 第十三  (注意teenth的重读)</span></p><p><span>fourteenth 第十四</span></p><p><span>fifteenth  第十五</span></p><p><span>sixteenth 第十六</span></p><p><span>seventeenth  第十七</span></p><p><span>eighteenth 第十八</span></p><p><span>nineteenth 第十九</span></p><p><span>twentieth 第二十</span></p><p><span>twenty-first 第二十一</span></p><p><span>thirtieth 第三十</span></p><p><span>fortieth 第四十</span></p><p><span>fiftieth 第五十</span></p><p><span>sixtieth 第六十</span></p><p><span>seventieth 第七十</span></p><p><span>eightieth 第八十</span></p><p><span>ninetieth 第九十</span></p><p><span>one hundredth 第一百</span></p><p>&nbsp;</p><h2 id='数字训练'><span>数字训练</span></h2><p><a href='https://www.bilibili.com/video/BV16C4y1s7h4/?spm_id_from=333.788.recommend_more_video.1'><span>数字训练</span></a></p><p><span>准备一张白纸，一边听一边写，一开始以10个数字为间隔，然后50个数字循环复习。反复听直到所有数字全部能写出来</span></p><h2 id='日期训练'><span>日期训练</span></h2><p><a href='https://www.bilibili.com/video/BV1iK411p7vo?p=2'><span>日期训练</span></a></p><h2 id='所有格'><span>所有格</span></h2><ul><li><p><span>有生命体的所有格</span></p><ul><li><span>John&#39;s father 约翰的爸爸</span></li><li><span>the dog&#39;s tail 这只狗的尾巴</span></li></ul></li><li><p><span>本身就有复数s可以省略&#39;后面的s：</span></p><ul><li><span>Mr.Jones&#39; car =Mr.Jones&#39;s car</span></li></ul></li><li><p><span>无生命体的所有格需要用到of</span></p><ul><li><span>the color of the table   桌子的颜色</span></li><li><span>the roof of the house </span></li><li><span>the leaves of the tree</span></li></ul></li><li><p><span>其他</span></p><ul><li><span>This is a girls&#39; school = This is a school for girls 这是一所女子学校</span></li><li><span>This is a girl&#39;s school 这是这个女孩子所上的学校。</span></li><li><span>This is the girls&#39; school 这是那些女孩子所上的学校</span></li><li><span>This is the girl&#39;s school 这是那个女孩子所上的学校</span></li></ul></li><li><p><span>不过表示时间today,tomorrow,yesterday和地方city,country,Hong Kong,Canada的名词都可以采用两种方式</span></p><ul><li><span>today&#39;s world = the world of today 今天的世界</span></li><li><span>the city&#39;s traffic  = the traffic of the city 该城市的交通</span></li><li><span>the climate of Canada = Canada&#39;s climate 加拿大的气候</span></li></ul></li></ul><h2 id='天气怎么样'><span>天气怎么样</span></h2><p><span>What&#39;s the weather like ?</span></p><p><span>How&#39;s the weather ?</span></p><p>&nbsp;</p><p>&nbsp;</p><p><span>It&#39;s fine.</span></p><p><span>It&#39;s terrible. 糟糕</span></p><p><span>It&#39;s awful. 糟糕</span></p><h2 id='你在哪里干什么'><span>你在哪里干什么</span></h2><p><span>What are you doing there?</span></p><h2 id='我在这儿出差'><span>我在这儿出差</span></h2><p><span>I&#39;m  here on business （做生意是do business)</span></p><p>&nbsp;</p><h2 id='真可惜'><span>真可惜</span></h2><p><span>What a shame!</span></p><p><span>What a pity</span></p><p><span>-- I can&#39;t go with you to the picnic .</span></p><p><span>-- What a shame.</span></p><h2 id='有-1'><span>有</span></h2><p><span>I have a dog.</span></p><p><span>非生命体主语&quot;有&quot;用There is/are.</span></p><p><span>There are four seasons in my hometown. </span></p><p><span>There is a book on the desk</span></p><p><span>There are twelve months in a year.</span></p><p><span>There is a bird on the tree.</span></p><p><span>There is a school near my house. </span></p><p>&nbsp;</p><h2 id='春夏秋冬'><span>春夏秋冬</span></h2><p><span>It&#39;s cool in spring  春天天气凉爽</span></p><p><span>It&#39;s sunny in summer 夏天有太阳</span></p><p><span>It&#39;s chilly in fall(Autumn).  秋天阴冷  (fall美国用，Autumn  英国用)</span></p><p><span>It&#39;s cold in winter 冬天寒冷</span></p><p>&nbsp;</p><h2 id='修饰天气'><span>修饰天气</span></h2><p><span>看得见的：</span></p><p><span>sunny 有太阳的</span></p><p><span>windy 起风</span></p><p><span>cloudy 阴天</span></p><p><span>rainy 下雨</span></p><p><span>foggy 起雾的</span></p><p><span>snowy 下雪</span></p><p>&nbsp;</p><p><span>感官：</span></p><p><span>hot 炎热的</span></p><p><span>warm 暖和的</span></p><p><span>cool 凉爽的</span></p><p><span>chilly  寒冷的</span></p><p><span>cold 寒冷的(比chilly更冷)</span></p><p>&nbsp;</p><p><span>What&#39;s the weather like today?</span></p><p><span>It&#39;s rainy and chilly.</span></p><p>&nbsp;</p><h2 id='现在进行时'><span>现在进行时</span></h2><p><span>It is raining right now.</span></p><p><span>Mary is singing in the room.</span></p><p><span>Tom is dancing with Mary.</span></p><p><span>I&#39;m writing a letter.</span></p><p><span>They&#39;re doing the work.</span></p><p>&nbsp;</p><h2 id='现在'><span>现在</span></h2><p><span>right now  强调就在现在</span></p><p><span>now </span></p><p><span>at the moment</span></p><p><span>-- Where&#39;s Peter?</span></p><p><span>-- He is studying  in the library (right) now.</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='吃晚餐'><span>吃晚餐</span></h2><p><span>I&#39;m eating dinner right now.</span></p><p><span>I&#39;m having dinner right now.</span></p><p>&nbsp;</p><h2 id='我可以吗'><span>我可以吗</span></h2><p><span>May I speak to Bob,please?</span></p><p><span>May I leave a message?</span></p><p>&nbsp;</p><h2 id='当然请便'><span>当然，请便</span></h2><p><span>Sure，Go ahead.</span></p><p><span>No Problem, Go ahead.</span></p><p>&nbsp;</p><h2 id='尽可能'><span>尽可能</span></h2><p><span>as soon as possible</span></p><p><span>Write this letter as soon as possible 尽快写这封信。</span></p><p>&nbsp;</p><h2 id='请问是谁在打电话啊'><span>请问是谁在打电话啊</span></h2><p><span>Who&#39;s calling?</span></p><p>&nbsp;</p><p><span>This is Tom.</span></p><p>&nbsp;</p><h2 id='我是汤姆'><span>我是汤姆</span></h2><p><span>两人见面面对面时：</span></p><p><span>I&#39;m Tom</span></p><p><span>两人没面对面：</span></p><p><span>This is Tom </span></p><p><span>It&#39;s Tom.</span></p><h2 id='打电话问对方是谁吗'><span>打电话，问对方是谁吗</span></h2><p><span>Hello, Is John there ,please ?</span></p><p><span>This is he.</span></p><p>&nbsp;</p><h2 id='稍等一下'><span>稍等一下</span></h2><p><span>Hold on,please</span></p><p><span>Just a minute,please</span></p><p><span>Just a moment ,please</span></p><p><span>Wait a minute, please</span></p><p><span>Wait  a moment,please.</span></p><p><span>one moment，please</span></p><p><span>Can I have another minute,please?</span></p><p>&nbsp;</p><h2 id='他什么时候回来'><span>他什么时候回来</span></h2><p><span>when will he be back? </span></p><p><span>When will he come back?</span></p><p>&nbsp;</p><p><span>I don&#39;t know.</span></p><h2 id='他不在'><span>他不在</span></h2><p><span>He&#39;s not in.</span></p><p><span>He&#39;s not here.</span></p><h2 id='稍后打来'><span>稍后打来</span></h2><p><span>I&#39;ll call back later.</span></p><p>&nbsp;</p><h2 id='一些'><span>一些</span></h2><p><span>a few friends  一些朋友</span></p><p><span>few friends  没什么朋友</span></p><p>&nbsp;</p><h2 id='组动词'><span>组动词</span></h2><p><span>must 必须（履行义务很强烈)</span></p><p><span>should  应该(履行义务较强烈)</span></p><p><span>   You should do it . 你应当做这事。</span></p><p><span>shall 要 （一般用于主语I,用来主动为对方做某事，有那种讨好的感觉) </span></p><p><span>   Shall I open the window?  要不要我把窗户打开。</span></p><p><span>will  将要（表示将来的动作)</span></p><p><span>   He will come today. 他今天会来。</span></p><p><span>can  能够（表示一种能力)</span></p><p><span>    I can do it .</span></p><p><span>may 可以 (疑问句用的多把)</span></p><p><span>   May  I leave a message?</span></p><p>&nbsp;</p><h2 id='诊所'><span>诊所</span></h2><p><span>Dr.Chen&#39;s clinic.</span></p><p><span>This is Dr.Chen&#39;s clinic.</span></p><p>&nbsp;</p><h2 id='预约-1'><span>预约</span></h2><p><span>I&#39;d like to make an appointment to see Dr.chen.</span></p><p><span>男女之间的约会用这个： make a date</span></p><p><span>I make a date with John/May this tonight. 今晚要和约翰/梅约会。 </span></p><p>&nbsp;</p><h2 id='下午4点可以吗'><span>下午4点可以吗</span></h2><p><span>Is 4 o&#39;clock in the afternoon ,Ok?</span></p><p>&nbsp;</p><h2 id='长途电话'><span>长途电话</span></h2><p><span>make a long  distance call</span></p><p><span>place a long distance call</span></p><h2 id='我能提供什么吗-礼貌用句'><span>我能提供什么吗 礼貌用句</span></h2><p><span>May I help you?</span></p><p><span>What can I do for you?</span></p><p><span>Can I be of any service to you?</span></p><p><span>I&#39;m just looking around. 我随便看看。</span></p><h2 id='请跟我来'><span>请跟我来</span></h2><p><span>This way ,please</span></p><p><span>follow me ,please.</span></p><p>&nbsp;</p><h2 id='明天可以吗'><span>明天可以吗</span></h2><p><span>Is fine with you  tomorrow?</span></p><p><span>Is all right with you tomorrow?</span></p><p><span>Is OK with you tomorrow? </span></p><p>&nbsp;</p><h2 id='打电话'><span>打电话</span></h2><p><span>make a call</span></p><p><span>make a telephone call</span></p><p><span>make a phone call</span></p><p>&nbsp;</p><h2 id='区号'><span>区号</span></h2><p><span>Area code 415.</span></p><p>&nbsp;</p><h2 id='客房服务中心'><span>客房服务中心</span></h2><p><span>hello,room service</span></p><p><span>This is room 369.</span></p><p>&nbsp;</p><h2 id='前台'><span>前台</span></h2><p><span>Hello,front desk.</span></p><p>&nbsp;</p><h2 id='打电话叫起床'><span>打电话叫起床</span></h2><p><span>Can you give me a morning call at 5 am tomorrow，please?</span></p><p><span>Can you give me a wake up call at 5 am tomorrow ,please ?</span></p><p>&nbsp;</p><h2 id='打电话给我'><span>打电话给我</span></h2><p><span>Please call me tomorrow.</span></p><p><span>Please give me a call tomorrow.</span></p><p><span>Please ring me tomorrow.</span></p><p><span>please give me a ring tomorrow.</span></p><p>&nbsp;</p><h2 id='订一些菜'><span>订一些菜</span></h2><p><span>I&#39;d like to order some food.</span></p><p>&nbsp;</p><h2 id='我饿坏了'><span>我饿坏了</span></h2><p><span>I&#39;m starving.</span></p><p><span>I&#39;m hungry.</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='先生你是不是准备好点菜呢'><span>先生，你是不是准备好点菜呢？</span></h2><p><span>Are you ready to order,sir ?</span></p><p><span>May I take your order now?</span></p><p><span>May I have your order now?</span></p><p><span>Would you like to order now?</span></p><p>&nbsp;</p><p><span>I&#39;m not ready to order yet.  我还没准备好点餐。</span></p><p>&nbsp;</p><h2 id='你想要点些什么'><span>你想要点些什么</span></h2><p><span>What would you like?</span></p><p>&nbsp;</p><h2 id='关闭停止营业打烊了'><span>关闭，停止营业，打烊了</span></h2><p><span>The museum is closed on Mondays. 那间博物馆每星期一都不开门。</span></p><p><span>The bookstore closes at 10:00 pm every day. 那家书店每天晚上10点打烊。</span></p><p><span>please close the window. It&#39;s cold.</span></p><p>&nbsp;</p><h2 id='在什么前面-in-front-of'><span>在什么前面 in front of </span></h2><p><span>There&#39;s a department store in front of the train station. 火车站前面有一家百货公司。</span></p><p>&nbsp;</p><h2 id='借钱'><span>借钱</span></h2><p><span>谁借给谁钱</span></p><p><span>Can you lend me 100 dollars?</span></p><p><span>I lend him 100 dollars. 我借给他钱。</span></p><p><span>向谁借钱</span></p><p><span>I borrow 100 dollars from him. 我从他借钱。</span></p><p>&nbsp;</p><h2 id='那支笔多少钱-商店里可以问但是不要私人问你的包多少钱啊外国人不喜欢额'><span>那支笔多少钱 (商店里可以问,但是不要私人问你的包多少钱啊,外国人不喜欢额)</span></h2><p><span>How much does that pen cost?</span></p><p><span>How much is that pen?</span></p><p>&nbsp;</p><p><span>It costs ten dollars.</span></p><p><span>It&#39;s ten dollars.</span></p><p>&nbsp;</p><h2 id='你有更便宜的吗'><span>你有更便宜的吗</span></h2><p><span>Do you have anything cheaper?</span></p><p><span>Sure.</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><h2 id='我要买它'><span>我要买它</span></h2><p><span>I&#39;ll take it.</span></p><p><span>I&#39;ll buy it.</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='你能找开100元吗'><span>你能找开100元吗</span></h2><p><span>Do you have change for one hundred?</span></p><p><span> </span></p><p><span>No problem.</span></p><p>&nbsp;</p><p><span>How much change do you have? 你有多少零钱？</span></p><p><span>How much do you have in change?</span></p><p>&nbsp;</p><p><span>I have change for ten dollars.</span></p><p><span>I have ten dollars in change.</span></p><p>&nbsp;</p><p><span>How huch cash do you have? 你有多少现金</span></p><p><span>How much do you have in cash? </span></p><p>&nbsp;</p><p><span>I have cash for one hundred.</span></p><p><span>I have one hundred in cash.</span></p><h2 id='钱给你'><span>钱给你</span></h2><p><span>Here&#39;s the money.</span></p><p>&nbsp;</p><p>&nbsp;</p><p><span>Thank you. Here&#39;s the book and your change.</span></p><p>&nbsp;</p><h2 id='有-2'><span>有</span></h2><p><span>不可数how much </span></p><p><span>How much money do you have?</span></p><p>&nbsp;</p><p><span>可数how many </span></p><p><span>How many books do you have?</span></p><p>&nbsp;</p><h2 id='价格昂贵'><span>价格昂贵</span></h2><p><span>The car is expensive.</span></p><p><span>The price of the car is high.</span></p><p><span>The car is selling at a high price.</span></p><p>&nbsp;</p><h2 id='某事某物'><span>某事，某物</span></h2><p><span>something 用于肯定句</span></p><p><span>I have something good for you. 我有好东西给你。</span></p><p><span>anything 用于否定句或疑问句</span></p><p><span>Do you have anything important to tell me ?</span></p><p><span>nothing 代表没有，无事，无物</span></p><p><span>The poor man has nothing to eat.</span></p><p>&nbsp;</p><h2 id='比较级'><span>比较级</span></h2><p><span>双音节或三音节以上形容词，加more</span></p><p><span>expensive  -&gt; more expensive</span></p><p><span>important -&gt; more important</span></p><p><span>beautiful  -&gt; more beautiful.</span></p><p>&nbsp;</p><p><span>单音节</span></p><p><span>cheap -&gt; cheaper</span></p><p><span>tall  -&gt; taller</span></p><p><span>cold -&gt; colder</span></p><p>&nbsp;</p><p><span>hot -&gt; hotter</span></p><p><span>fat -&gt; fatter</span></p><p>&nbsp;</p><h2 id='我可以看一下那件衬衫吗'><span>我可以看一下那件衬衫吗？</span></h2><p><span>Can I have a look at that shirt?</span></p><p><span>Here you are /here you go 拿去吧。</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='你又来这一套了'><span>你又来这一套了</span></h2><p><span>There you go again.</span></p><p>&nbsp;</p><h2 id='我们到了'><span>我们到了</span></h2><p><span>Here we are.</span></p><h2 id='在餐厅'><span>在餐厅</span></h2><p><span>at the restaurant </span></p><p><span>in the restaurant   at表示在外面或者里面，in一定在里面。</span></p><p>&nbsp;</p><h2 id='有双人桌吃饭吗'><span>有双人桌吃饭吗</span></h2><p><span>Do you have a table for two (people)?</span></p><p>&nbsp;</p><h2 id='预约-2'><span>预约</span></h2><p><span>I&#39;d like to order a table for seven?</span></p><p><span>I&#39;d like to reserve a table for seven?</span></p><h2 id='抽烟区还是非抽烟区'><span>抽烟区还是非抽烟区？</span></h2><p><span>in the smoking or non-smoking section?</span></p><p><span>Would you like to sit in the smoking section or the non-smoking section?</span></p><h2 id='麻烦可以给我靠窗的座位吗'><span>麻烦可以给我靠窗的座位吗</span></h2><p><span>Can I have a window seat,please?</span></p><h2 id='二手烟'><span>二手烟</span></h2><p><span>second hand smoke</span></p><h2 id='请给我一个菜单'><span>请给我一个菜单</span></h2><p><span>May I have the menu?</span></p><p>&nbsp;</p><h2 id='请给我账单'><span>请给我账单？</span></h2><p><span>May I have the check?</span></p><p><span>May I have the bill?</span></p><h2 id='你的牛排要几份熟'><span>你的牛排要几份熟？</span></h2><p><span>-- I&#39;ll have the steak.</span></p><p><span>-- How would you like it ? 你的牛排要几份熟？</span></p><p><span>-- Well - done,please.  全熟</span></p><p>&nbsp;</p><p><span>I&#39;d like it well done 全熟</span></p><p><span>I&#39;d like it medium 六七分熟</span></p><p><span>I&#39;d like it medium rare. 四五分熟</span></p><p><span>I&#39;d like it rare. 三分熟</span></p><p>&nbsp;</p><h2 id='你的咖啡要怎么泡'><span>你的咖啡要怎么泡?</span></h2><p><span>How would like your coffee?</span></p><p>&nbsp;</p><p><span>Black,please.  什么都不加的纯咖啡。</span></p><p><span>Just sugar,please.  只加糖。</span></p><p><span>Cream and no sugar. 只加奶精，不要加糖。</span></p><p><span>With sugar and cream. 糖和奶精都要。</span></p><h2 id='你想要一些甜点吗'><span>你想要一些甜点吗？</span></h2><p><span>Would you like some dessert?</span></p><p>&nbsp;</p><p><span>No,Thank you.</span></p><h2 id='你想要什么喝的吗'><span>你想要什么喝的吗</span></h2><p><span>How about something to drink?</span></p><p>&nbsp;</p><p><span>Hot coffee,please.</span></p><p>&nbsp;</p><h2 id='要我帮你拿袋子吗'><span>要我帮你拿袋子吗</span></h2><p><span>Would you want me to carry your bags?</span></p><p><span> </span></p><p><span>Yes,please.</span></p><h2 id='请给我来份鸡肉饭'><span>请给我来份鸡肉饭</span></h2><p><span>Please give me the chicken rice.</span></p><p><span>I&#39;ll have the chicken rice.</span></p><p>&nbsp;</p><h2 id='服务生'><span>服务生</span></h2><p><span>waiter 男服务生</span></p><p><span>waitress 女服务生</span></p><p>&nbsp;</p><h2 id='明天去野餐怎么样'><span>明天去野餐怎么样？</span></h2><p><span>How about going on a picnic tomorrow?</span></p><p><span>Would you like to go on a picnic tomorrow?</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='在服装店'><span>在服装店</span></h2><p><span>At the clothing store.</span></p><p>&nbsp;</p><h2 id='你穿几号的'><span>你穿几号的?</span></h2><p><span>What size do you wear?</span></p><p><span>I wear size  thirty-nine shoes. 我穿39号的鞋子。</span></p><p>&nbsp;</p><p><span>What size shoes do you wear?</span></p><p><span>What size socks do you wear? 你穿几号的袜子？</span></p><p>&nbsp;</p><p><span>Extra large. 特大号的</span></p><p>&nbsp;</p><h2 id='我可以试穿吗'><span>我可以试穿吗</span></h2><p><span>May I try it on?   （it这种代名词只能在try on中间，不能May I try on it)</span></p><p><span>Can I try this cap on ? </span></p><p><span>Can I try on this cap?</span></p><p>&nbsp;</p><p><span>Sure, Go ahead.</span></p><p>&nbsp;</p><h2 id='我正在寻找一条领带'><span>我正在寻找一条领带</span></h2><p><span>I&#39;m looking for a necktie.</span></p><p>&nbsp;</p><h2 id='任何特殊的品牌吗'><span>任何特殊的品牌吗</span></h2><p><span>Any special brand?</span></p><p>&nbsp;</p><p><span>No.Just something simple(plain) and not too expensive.</span></p><p>&nbsp;</p><p><span>I like that brand of coffee  most . 我最喜欢那个牌子的咖啡了。</span></p><p>&nbsp;</p><p><span>Brand - new 全新的</span></p><p><span>Be careful with that car, it&#39;s brand-new. 请小心那辆车子，他是全新的。</span></p><p>&nbsp;</p><p><span>Any special kind ? 特殊种类？</span></p><p>&nbsp;</p><p><span>Any special type? 特殊样式？</span></p><p>&nbsp;</p><h2 id='这一条如何'><span>这一条如何?</span></h2><p><span>how about this one?</span></p><p>&nbsp;</p><p><span>That&#39;s fine.</span></p><p>&nbsp;</p><h2 id='正在特价'><span>正在特价</span></h2><p><span>It&#39;s on sale.</span></p><p><span>Shoes are on sale in that department store.</span></p><p>&nbsp;</p><p><span>for sale 出售</span></p><p><span>I&#39;m sorry,but this  painting is not for sale. </span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='外套'><span>外套</span></h2><p><span>a jacket  夹克</span></p><p><span>a coat  外套</span></p><p><span>a shirt  衬衫</span></p><p><span>a blouse 女式衬衫</span></p><p>&nbsp;</p><p><span>a pair of trousers  一条裤子（长裤)  two pairs of trousers 两条裤子</span></p><p><span>a pair of pants  (美英不同含义，一般就别用了)</span></p><p><span>a pair of shorts 一条短裤 </span></p><p><span>a pair of slacks 休闲裤 (休闲的长裤)</span></p><p><span>a pair of jeans 牛仔裤</span></p><p>&nbsp;</p><p><span> a lot of ,much ,some 修饰不可数名词clothing.</span></p><p><span>many,some 修饰可数名词clothes.</span></p><p><span>She has a lot of clothing in her closet.</span></p><p><span>She has many clothes in her closet.</span></p><p>&nbsp;</p><p><span>cloth  布</span></p><p><span>a piece of cloth 一块布</span></p><p><span>some cloth / a lot of cloth 一些布</span></p><p><span>I always wipe the floor with an old piece of cloth.我向来都是用旧布擦拭地板。</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='大小'><span>大小</span></h2><p><span>small 小号 S</span></p><p><span>medium 中号 M </span>
+<span>large 大号 L </span></p><p><span>extra large 特大号 XL</span></p><p>&nbsp;</p><h2 id='你能帮我一下吗'><span>你能帮我一下吗</span></h2><p><span>Could you help me ,please?</span></p><p><span>Can you do me a favor,please?</span></p><p><span>Can you give me a hand,please?</span></p><p>&nbsp;</p><p><span>Let me give you a hand with the box. 让我帮忙你拿那个箱子。</span></p><p>&nbsp;</p><p><span>a big hand 热烈鼓掌</span></p><p><span>Let&#39;s give the speaker a big hand!</span></p><p>&nbsp;</p><h2 id='你能用礼品纸包装起来吗'><span>你能用礼品纸包装起来吗？</span></h2><p><span>Can you gift-wrap it?</span></p><p>&nbsp;</p><p><span>please wrap  the baby in a blanket. 请把小宝宝包在毯子里。</span></p><p>&nbsp;</p><h2 id='你这儿有合乎我尺寸的蓝色洋装吗'><span>你这儿有合乎我尺寸的蓝色洋装吗？</span></h2><p><span>Do you have a blue dress （in)  my size?</span></p><p>&nbsp;</p><p><span>Let me take your measurements.</span></p><p>&nbsp;</p><p><span>What&#39;s your waist measurement? 你的腰围多粗？</span></p><p>&nbsp;</p><p><span>tailor-made  订做的</span></p><p><span>ready - made 现成的，已经做好的</span></p><p><span>If you want to have a tailor - made suit,  the tailor must take your measurements.</span></p><p><span>如果你想要订做的西装，裁缝师必须要量你的尺寸。</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='你们有试衣间吗'><span>你们有试衣间吗?</span></h2><p><span>Do you have a fitting room ?</span></p><p>&nbsp;</p><p><span>It&#39;s in the corner over there.  (over起强调作用就得意思，代表就在那里)</span></p><p>&nbsp;</p><h2 id='散个步'><span>散个步</span></h2><p><span>Let&#39;s take a walk in the park</span></p><p>&nbsp;</p><h2 id='角落'><span>角落</span></h2><p><span>in the corner 在角落里</span></p><p><span>on the corner 在角落处</span></p><p><span>around the corner 在角落附近</span></p><p>&nbsp;</p><p><span>Helen is sitting in the corner of the room.</span></p><p><span>There&#39;s a grocery store on the corner. 在转角处有家杂货店。</span></p><p><span>Mary lives around the corner. 玛丽住在转角附近。</span></p><p>&nbsp;</p><h2 id='这一双刚好'><span>这一双刚好</span></h2><p><span>These are just right.</span></p><h2 id='那是个好主意'><span>那是个好主意</span></h2><p><span>That&#39;s a good idea.</span></p><p><span>That sounds like a good idea.</span></p><p><span>Sounds like a good idea.</span></p><p>&nbsp;</p><h2 id='高跟鞋'><span>高跟鞋</span></h2><p><span>high - heeled shoes</span></p><p>&nbsp;</p><h2 id='双城记'><span>双城记</span></h2><p><em><span>A Tale of Two Cities.</span></em></p><p>&nbsp;</p><h2 id='谁是作者'><span>谁是作者</span></h2><p><span>Who&#39;s author?</span></p><p>&nbsp;</p><h2 id='查尔斯'><span>查尔斯</span></h2><p><span>Charles </span></p><p>&nbsp;</p><h2 id='卖完了'><span>卖完了</span></h2><p><span>We&#39;re sold out . </span></p><p><span>We&#39;re sold out of shoes in your size.</span></p><p><span>We have sold out of shoes in your size.</span></p><p>&nbsp;</p><h2 id='请下星期再来'><span>请下星期再来</span></h2><p><span>Please come back next week.</span></p><p>&nbsp;</p><h2 id='英汉词典'><span>英汉词典</span></h2><p><span>Do you have a good English - Chinese dictionary?</span></p><p>&nbsp;</p><h2 id='这是最新版本吗'><span>这是最新版本吗?</span></h2><p><span>Is this the latest edition?</span></p><p>&nbsp;</p><h2 id='我们有平装本和精装本'><span>我们有平装本和精装本</span></h2><p><span>We have both the paperback and the hardcover ?</span></p><p>&nbsp;</p><h2 id='查字典'><span>查字典</span></h2><p><span>consult the dictionary  查字典</span></p><p>&nbsp;</p><p><span>I&#39;ll  consult the dictionary for the meaning of that word.</span></p><p>&nbsp;</p><p><span>look up the word in the dictionary  在字典里查单词</span></p><p>&nbsp;</p><p><span>I must look up that difficult word in the dictionary.</span></p><p>&nbsp;</p><h2 id='搭出租车'><span>搭出租车</span></h2><p><span>Taking a Taxi.</span></p><p><span>Taking the taxi.</span></p><p>&nbsp;</p><p><span>Let&#39;s  take the taxi to the restaurant.</span></p><p><span>Let&#39;s go to the restaurant by taxi.</span></p><p>&nbsp;</p><h2 id='步行'><span>步行</span></h2><p><span>on foot</span></p><p>&nbsp;</p><h2 id='你要到哪儿去'><span>你要到哪儿去</span></h2><p><span>Where to ,ma&#39;am?</span></p><p><span>Where are you going ?  (不能说成 Where are you going to ?)</span></p><p>&nbsp;</p><h2 id='要给你多少钱'><span>要给你多少钱</span></h2><p><span>How much do I owe you?</span></p><p><span>How much ?</span></p><p><span>How much is it ?</span></p><p>&nbsp;</p><p><span>It&#39;s 135 yuan on the meter.</span></p><p>&nbsp;</p><h2 id='零钱不用找了'><span>零钱不用找了</span></h2><p><span>Keep the change.</span></p><p>&nbsp;</p><h2 id='国际机场还是国内机场'><span>国际机场还是国内机场？</span></h2><p><span>The international or domestic airport?</span></p><p>&nbsp;</p><h2 id='你能快点吗'><span>你能快点吗</span></h2><p><span>I&#39;m in a hurry.  Could you speed up ,please?</span></p><p><span>I&#39;m in a rush. Could you speed up ,please?</span></p><p>&nbsp;</p><p><span>Slow down. 慢一点。 You&#39;re driving too fast.</span></p><p>&nbsp;</p><h2 id='我会及时送你到那儿'><span>我会及时送你到那儿</span></h2><p><span>I&#39;ll get you there in time</span></p><p><span>I&#39;ll take you there in time.</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><h2 id='我不想误了我的航班'><span>我不想误了我的航班</span></h2><p><span>I don&#39;t want to miss my flight.</span></p><p><span>If you miss the bus , you&#39;ll be late.</span></p><p>&nbsp;</p><h2 id='订房间'><span>订房间</span></h2><p><span>Booking a room </span></p><p><span>I&#39;d like to book(reserve) a room.</span></p><p><span>I&#39;m going to  book a suite at the hotel in tokyo.</span></p><p><span>I will book two seats for tonights&#39; concert.</span></p><p>&nbsp;</p><p><span>I am going to reserve a suite .</span></p><p><span>I am going to make a reservation for a suite.</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='你有单人间吗'><span>你有单人间吗</span></h2><ul><li><span>single room  单人间(一张床，床只能容下一个人睡)</span></li><li><span>double(twin) room 双人间（两张床，床只能容下一个人睡，一般国内标间默认指双人房)</span></li><li><span>king room 大床房(一张床，可以容下两个人睡) </span></li><li><span>suite   套房 （比如一室两厅这种)</span></li><li><span>deluxe suite 豪华套房</span></li><li><span>presidential suite 总统套房</span></li></ul><p>&nbsp;</p><p><span> Do you have a single room?</span></p><p><span>       </span></p><p><span> Sorry, We&#39;re fully booked. The only room available at the moment is a twin room.</span></p><p>&nbsp;</p><h2 id='订满了'><span>订满了</span></h2><p><span> Sorry, We&#39;re fully booked.</span></p><h2 id='你要住几天呢'><span>你要住几天呢？</span></h2><p><span>How many days do you want to stay?</span></p><p>&nbsp;</p><p><span>Five days.</span></p><p>&nbsp;</p><p><span>I have lived in Taipei for three days.</span></p><p>&nbsp;</p><h2 id='房间价格多少呢'><span>房间价格多少呢</span></h2><p><span>What&#39;s the price?</span></p><p><span>What&#39;s the rate?</span></p><p><span>What&#39;s the charge?</span></p><p>&nbsp;</p><p><span>It&#39;s 100 for a single.</span></p><p>&nbsp;</p><p><span>What are your rates for tutoring at  a student&#39;s home?</span></p><p>&nbsp;</p><p><span>at the rate of  ..  以...的速度</span></p><p><span>The chicken lays eggs at the rate of one a day.</span></p><h2 id='大厅'><span>大厅</span></h2><p><span>at the lobby </span></p><p>&nbsp;</p><h2 id='到时候见'><span>到时候见</span></h2><p><span>See you then.</span></p><p><span>see you at that time.</span></p><p><span>see you when you arrive.</span></p><p>&nbsp;</p><h2 id='公寓'><span>公寓</span></h2><p><span>apartment 公寓</span></p><p><span>dorm（dormitory) 宿舍</span></p><p>&nbsp;</p><p><span>I live with a friend in a small apartment.</span></p><p>&nbsp;</p><h2 id='办理住宿手续'><span>办理住宿手续</span></h2><p><span>Checking into(in) a hotel.</span></p><p>&nbsp;</p><p><span>Check out 办理退房手续</span></p><p><span>We have to check out of the hotel before 12 noon.</span></p><p>&nbsp;</p><h2 id='预定号码房间'><span>预定...号码房间</span></h2><p><span>I&#39;m booked in Room 215( two - fifteen, two - one -five)</span></p><p>&nbsp;</p><p><span>小数点后面不能合并</span></p><p><span>2.15  (two  point one five)</span></p><p>&nbsp;</p><h2 id='请填一下这个表格'><span>请填一下这个表格</span></h2><p><span>Please fill out this form.</span></p><p><span>Please fill in this form.</span></p><p>&nbsp;</p><p><span>Before the job interview, you have to fill out an application form.</span></p><p>&nbsp;</p><h2 id='你要付现金还是刷卡'><span>你要付现金还是刷卡</span></h2><p><span>Will you pay by cash or charge? （charge card 是美国一种类似于信用卡的卡)char</span></p><p><span>Will you pay by cash or credit card?</span></p><p>&nbsp;</p><p>&nbsp;</p><p><span>The tutor charges his students 100 an hour for English lessons.</span></p><h2 id='你接受现金吗'><span>你接受现金吗？</span></h2><p><span>Do you take cash?</span></p><p><span>Do you accept cash?</span></p><p>&nbsp;</p><p><span>Certainly.</span></p><p>&nbsp;</p><h2 id='行李员'><span>行李员</span></h2><p><span>bellboy </span></p><p><span>The bellboy will take them and show you to your room.</span></p><p>&nbsp;</p><h2 id='行李'><span>行李</span></h2><p><span>Do you have any luggage?</span></p><p><span>Do you have any baggage?</span></p><p>&nbsp;</p><p><span>Yes,These two suitcases.</span></p><p>&nbsp;</p><p><span>a piece of luggage  一件行李</span></p><p><span>two pieces of luggage  两件行李</span></p><p>&nbsp;</p><p><span>I never take more than two pieces of luggage when I travel.</span></p><p>&nbsp;</p><p><span>bag 袋子</span></p><p><span>handbag  女式手提包，手提袋</span></p><p><span>box 箱子</span></p><p><span>suitcase  手提箱</span></p><p><span>briefcase 公事包</span></p><h2 id='对吗好不好'><span>对吗，好不好</span></h2><p><span>Let&#39;s go to the movies tonight, shall we? 今晚去看电影，好吗</span></p><p>&nbsp;</p><p><span>Close the door, will you ? 关上门，好吗?</span></p><p>&nbsp;</p><p><span>Helen loves flowers, doesn&#39;t she ?</span></p><p>&nbsp;</p><p><span>You don&#39;t like me ,do you ? 你不喜欢我，对吗？</span></p><p>&nbsp;</p><h2 id='我想把这些旅行支票换成现金'><span>我想把这些旅行支票换成现金</span></h2><p><span>I&#39;d like to cash these traveler&#39;s checks ,please?</span></p><p>&nbsp;</p><h2 id='身份证明文件'><span>身份证明文件</span></h2><p><span>Do  you have any identification?</span></p><p><span>Do you have any ID?</span></p><p>&nbsp;</p><p><span>ID card  身份证</span></p><p><span>driver&#39;s license 驾驶执照</span></p><p><span>passport 护照</span></p><p>&nbsp;</p><h2 id='我的护照可以吗'><span>我的护照可以吗</span></h2><p><span>Will my passport do?</span></p><p>&nbsp;</p><h2 id='请问美元对人民币的汇率是多少'><span>请问美元对人民币的汇率是多少</span></h2><p><span>What&#39;s the exchange rate between US dollar and RMB?</span></p><p>&nbsp;</p><p><span>It&#39;s 7.89 RMB to 1 US dollar.</span></p><p>&nbsp;</p><h2 id='交换'><span>交换</span></h2><p><span>Could you exchange this 10 for two 5?</span></p><p><span>Would you like to exchange gifts with me ?</span></p><p>&nbsp;</p><h2 id='换钱'><span>换钱</span></h2><p><span>I&#39;d like to change RMB into US dollars.</span></p><p>&nbsp;</p><h2 id='剩余'><span>剩余</span></h2><p><span>the rest</span></p><p><span>Only two students are absent, and the rest are all present today.</span></p><p>&nbsp;</p><h2 id='订机票'><span>订机票</span></h2><p><span>Booking an Airline Ticket.</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='我想订一张机票从上海到北京'><span>我想订一张机票从上海到北京</span></h2><p><span>I&#39;d like to book a flight from SH to BJ?</span></p><p>&nbsp;</p><h2 id='你想要什么舱位'><span>你想要什么舱位？</span></h2><p><span>Which class do you wish to fly ?</span></p><p>&nbsp;</p><p><span>first class 头等舱</span></p><p><span>business  class  商务舱</span></p><p><span>economy  class 经济舱</span></p><p>&nbsp;</p><h2 id='出发日期'><span>出发日期</span></h2><p><span>Date of departure?</span></p><p><span>What&#39;s the date of your departure?</span></p><p>&nbsp;</p><h2 id='你预定的是cx167航班-起飞时间是7月4号11点15分'><span>你预定的是CX167航班 ，起飞时间是7月4号11点15分</span></h2><p><span>You&#39;re booked on flight number CX167, and it departs at 11:15 am on July 4th.</span></p><p>&nbsp;</p><h2 id='日本航空'><span>日本航空</span></h2><p><span>Japan Airlines.</span></p><p>&nbsp;</p><h2 id='来回票'><span>来回票</span></h2><p><span>a round - trip ticket.</span></p><p>&nbsp;</p><p><span>a one - way ticket 单程票</span></p><p>&nbsp;</p><p><span>one - way street 单行道</span></p><h2 id='什么时候'><span>什么时候</span></h2><p><span>for when ?</span></p><p>&nbsp;</p><p><span>for this Sunday.</span></p><p>&nbsp;</p><h2 id='请在星期五打电话回来确认'><span>请在星期五打电话回来确认</span></h2><p><span>please call back on Friday to reconfirm .</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='我想要出国念书'><span>我想要出国念书</span></h2><p><span>I wish to study abroad.</span></p><p><span>I hope to study abroad.</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='按时'><span>按时</span></h2><p><span>on schedule </span></p><p><span>The train departs on schedule every morning.</span></p><p>&nbsp;</p><h2 id='明天我将出发去北京'><span>明天我将出发去北京</span></h2><p><span>I will depart for Bj tomorrow.</span></p><p><span>I will leave for Bj tomorrow.</span></p><p>&nbsp;</p><h2 id='出生日期'><span>出生日期</span></h2><p><span>your date of birth is Jan 30 ,1970</span></p><p>&nbsp;</p><h2 id='入境出境大厅'><span>入境出境大厅</span></h2><p><span>this is the arrival lounge.  这是入境大厅</span></p><p><span>This is the departure lounge. 这是离境大厅</span></p><p>&nbsp;</p><h2 id='登记手续柜台'><span>登记手续柜台</span></h2><p><span>The check in counters</span></p><p>&nbsp;</p><h2 id='我们不用先去付机场税吗'><span>我们不用先去付机场税吗？</span></h2><p><span>Don&#39;t we have to go pay the airport tax first?</span></p><p>&nbsp;</p><p><span>No, We pay it after we check in.</span></p><p>&nbsp;</p><h2 id='靠窗还是过道'><span>靠窗还是过道</span></h2><p><span>Aisle (seat) or window seat?</span></p><p><span>Would you like an aisle seat or a window seat ?</span></p><p>&nbsp;</p><h2 id='行李托运'><span>行李托运</span></h2><p><span>I&#39;ll check in this suitcase.</span></p><p>&nbsp;</p><h2 id='到达'><span>到达</span></h2><p><span>arrive  at +地点（建筑物)</span></p><p><span>arrive at +地方(城市)</span></p><p>&nbsp;</p><p><span>arrive at the hotel</span></p><p><span>arrive in New York.</span></p><p>&nbsp;</p><h2 id='喷泉'><span>喷泉</span></h2><p><span>fountain  </span></p><p><span>There&#39;s a beautiful fountain in the middle of the park.</span></p><p>&nbsp;</p><h2 id='请注意'><span>请注意</span></h2><p><span>May I have your attention ,please?</span></p><p><span>Attention ,please? The plane will take off in five minutes.</span></p><p>&nbsp;</p><h2 id='谢谢你们的合作'><span>谢谢你们的合作</span></h2><p><span>Thanks for your cooperation.</span></p><p>&nbsp;</p><h2 id='垃圾'><span>垃圾</span></h2><p><span>trash </span></p><p><span>garbage </span></p><p><span>rubbish</span></p><p>&nbsp;</p><h2 id='请填好这些标签然后把他们系在你的行李箱上'><span>请填好这些标签然后把他们系在你的行李箱上</span></h2><p><span>please fill out these tags and attach them to your suitcase.</span></p><p>&nbsp;</p><h2 id='把它们放在称上'><span>把它们放在称上</span></h2><p><span>put them on the scale.</span></p><p>&nbsp;</p><h2 id='我恐怕你的行李超重了'><span>我恐怕你的行李超重了</span></h2><p><span>I&#39;m afraid your luggage is overweight.</span></p><p>&nbsp;</p><h2 id='你必须额外付行李超重费'><span>你必须额外付行李超重费</span></h2><p><span>You&#39;ll have to pay an excess baggage charge.</span></p><p>&nbsp;</p><h2 id='领取行李的存根'><span>领取行李的存根</span></h2><p><span>The baggage claim stub are attached to them.</span></p><p><span>The baggage tag are attached to them.</span></p><p>&nbsp;</p><h2 id='提取行李处'><span>提取行李处</span></h2><p><span>baggage claim area.</span></p><p>&nbsp;</p><p><span>Where can I claim my baggage?</span></p><h2 id='登机牌'><span>登机牌</span></h2><p><span>borading pass.</span></p><p>&nbsp;</p><h2 id='12号门登机'><span>12号门登机</span></h2><p><span>You borad at Gate 12.</span></p><p>&nbsp;</p><h2 id='就这样了吗'><span>就这样了吗</span></h2><p><span>Is that all ?</span></p><p>&nbsp;</p><h2 id='请在这里等待'><span>请在这里等待</span></h2><p><span>Please wait here.</span></p><p>&nbsp;</p><h2 id='你的行李必须通过机器扫描'><span>你的行李必须通过机器扫描</span></h2><p><span>You luggage must go through the X-ray machine.</span></p><p>&nbsp;</p><h2 id='祝你搭机愉快'><span>祝你搭机愉快</span></h2><p><span>have a good flight.</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='他把绳子系在风筝上'><span>他把绳子系在风筝上</span></h2><p><span>He attaches the string to his kite.</span></p><p>&nbsp;</p><h2 id='你需要节食了'><span>你需要节食了</span></h2><p><span>you should go on  a diet.</span></p><p>&nbsp;</p><h2 id='让我想想-让我看看'><span>让我想想 ，让我看看</span></h2><p><span>Let me see.</span></p><p>&nbsp;</p><h2 id='一包香烟'><span>一包香烟</span></h2><p><span>a pack of cigarettes.</span></p><p>&nbsp;</p><h2 id='一瓶啤酒'><span>一瓶啤酒</span></h2><p><span>A battle of beer.</span></p><p>&nbsp;</p><h2 id='我想邮寄这封信'><span>我想邮寄这封信</span></h2><p><span>I&#39;d like to post this letter,please.</span></p><p>&nbsp;</p><p><span>Where to ?</span></p><p>&nbsp;</p><h2 id='让我称一下重量'><span>让我称一下重量</span></h2><p><span>Let me weigh it. </span></p><p>&nbsp;</p><p><span>Do you often weigh yourself?  你时常量体重吗？</span></p><h2 id='我想要用航空邮寄这个麻烦你'><span>我想要用航空邮寄这个，麻烦你</span></h2><p><span>I&#39;d like to send this letter by air mail, please.</span></p><p>&nbsp;</p><h2 id='你不能把这信封封起来'><span>你不能把这信封封起来</span></h2><p><span>You can&#39;t seal the envelope,.</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='邮票多少钱'><span>邮票多少钱</span></h2><p><span>How much is the stamp ?</span></p><p>&nbsp;</p><h2 id='在邮局'><span>在邮局</span></h2><p><span>At the post office.</span></p><p>&nbsp;</p><h2 id='让他自己一个人做'><span>让他自己一个人做</span></h2><p><span>Let him do it alone.</span></p><p>&nbsp;</p><h2 id='请详细填写这份表格'><span>请详细填写这份表格</span></h2><p><span>please fill out the form in detail.</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='用海运寄包裹比寄空运便宜'><span>用海运寄包裹比寄空运便宜</span></h2><p><span>It&#39;s cheaper to send a package by sea mail than by air mail.</span></p><p>&nbsp;</p><h2 id='很多邮件'><span>很多邮件</span></h2><p><span>a lot of mail</span></p><p>&nbsp;</p><h2 id='帅的'><span>帅的</span></h2><p><span>Jack is handsome.</span></p><p>&nbsp;</p><h2 id='在医生诊疗室'><span>在医生诊疗室</span></h2><p><span>At the doctor&#39;s </span></p><p><span>At the doctor&#39;s office</span></p><h2 id='我认为我感冒了'><span>我认为我感冒了</span></h2><p><span>I think I have the flu.</span></p><p><span>I have a cough. 我有咳嗽</span></p><p><span>I have a sore throat .我有喉咙痛</span></p><p>&nbsp;</p><p><span>I have a sore arm. 我手臂疼痛</span></p><p><span>I have a sore leg.  我腿部疼痛</span></p><p><span>I have a headache 我头疼</span>
+<span>I have a toothache. 我牙疼</span></p><p><span>I have a stomachache 我胃痛</span></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='我有一点发烧'><span>我有一点发烧</span></h2><p><span>I have a bit of fever.</span></p><p>&nbsp;</p><p><span>I have a high fever. 我发高烧</span></p><h2 id='情况相当严重'><span>情况相当严重</span></h2><p><span>It&#39;s quite serious.</span></p><p>&nbsp;</p><h2 id='我认为你需要打一针'><span>我认为你需要打一针</span></h2><p><span>I think you need a shot.</span></p><p><span>I think you need  an  injection.</span></p><p>&nbsp;</p><h2 id='会不会痛呢'><span>会不会痛呢？</span></h2><p><span>Is it going to hurt ?</span></p><p>&nbsp;</p><h2 id='很快就会结束'><span>很快就会结束</span></h2><p><span>It&#39;ll soon be over.</span></p><p>&nbsp;</p><h2 id='饭后服用这些药丸一天三次'><span>饭后服用这些药丸，一天三次</span></h2><p><span>Take these pills  3 times a day after meals.</span></p><p>&nbsp;</p><h2 id='我下周会去旅行'><span>我下周会去旅行</span></h2><p><span>I&#39;m going to take a trip next week.</span></p><p><span>I will take a trip next week.</span></p><p>&nbsp;</p><h2 id='喝汤时不要发生声音'><span>喝汤时不要发生声音</span></h2><p><span>Don&#39;t make noises when you eat a soup. (喝汤是eat，不是drink)</span></p><p>&nbsp;</p><h2 id='一顿饭-meal'><span>一顿饭 meal </span></h2><p><span>She always has a small meal at lunch time 他午餐都吃的很少</span></p><p><span>Don&#39;t read the newspaper at meals. 吃饭时不要看报纸。</span></p><p><span>My litter sister likes to eat between meals. 我小妹喜欢吃零食。</span></p><p>&nbsp;</p><h2 id='他没有上班'><span>他没有上班</span></h2><p><span>Peter isn&#39;t at work.</span></p><p>&nbsp;</p><h2 id='我担心父母的健康'><span>我担心父母的健康</span></h2><p><span>I&#39;m worried about my parents&#39; health.</span></p></div></div>
+</body>
+</html>
